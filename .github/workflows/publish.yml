@@ -19,7 +19,7 @@ jobs:
         run: docker build -t ref05/monomap:${{ github.sha }} .
 
       - name: Tag Latest
-        run: docker tag ref05/monomap:${{ github.sha }} /monomap:latest
+        run: docker tag ref05/monomap:${{ github.sha }} ref05/monomap:latest
 
       - name: Push Docker image
         run: |
